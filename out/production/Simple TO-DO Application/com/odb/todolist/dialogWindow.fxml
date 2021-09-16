@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.odb.todolist.DialogController">
+    <headerText>
+        Add a new item to your todo list.
+    </headerText>
+    <content>
+        <GridPane hgap="10" vgap="10" >
+            <Label text="Description: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="descriptionField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label text="Details: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextArea fx:id="contentArea" GridPane.rowIndex="1" GridPane.columnIndex="1" wrapText="true"/>
+            <Label text="Deadline: " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="deadlinePicker" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>
